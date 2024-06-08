@@ -1,0 +1,6 @@
+@RouletteGame_HostAddress = http://localhost:5247
+
+GET {{RouletteGame_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
