@@ -19,9 +19,13 @@ builder.Services.AddInfrastructurePersistenceServices();
 //Add cors
 builder.Services.AddCors();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+app.UseHttpsRedirection();
+app.UseExceptionHandler("/Home/Error");
 
 app.UseSwagger();
 app.UseSwaggerUI();

@@ -9,7 +9,7 @@ export class RouletteService {
 
   constructor() {
     this.http = axios.create({
-      baseURL: "http://localhost:5247/api/roulette",
+      baseURL: "http://localhost:4050/api/roulette",
       headers: {
         "Content-Type": "application/json",
       },
